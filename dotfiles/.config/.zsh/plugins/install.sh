@@ -1,3 +1,6 @@
+# chmod +x install.sh 
+# ./install.sh
+# run stow again
 set -euo pipefail
 
 PLUGIN_DIR="$(dirname "$(realpath "$0")")"
