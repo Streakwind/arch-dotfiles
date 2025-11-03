@@ -8,6 +8,7 @@ brightnessctl hyprpaper blueman pavucontrol rofi hyprshot network-manager-applet
 ```
 
 most of the stuff is stolen from either @binnewbs or @JaKooLit
+wallpapers from @mylinuxforwork and @uiriansan
 
 fonts
 ```
@@ -34,5 +35,3 @@ optional stuff I use
 ```
 btop brave-bin visual-studio-code-bin nano yay
 ```
-
-wallpapers from silent sddm theme 
