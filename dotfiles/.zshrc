@@ -9,4 +9,6 @@ setopt HIST_IGNORE_DUPS
 setopt SHARE_HISTORY
 setopt HIST_REDUCE_BLANKS
 
+export ELECTRON_OZONE_PLATFORM_HINT=auto
+
 fastfetch
