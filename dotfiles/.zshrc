@@ -1,0 +1,12 @@
+eval "$(oh-my-posh init zsh)"
+eval "$(oh-my-posh init zsh --config ~/.poshthemes/catppuccin_frappe.omp.json)"
+
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+
+setopt HIST_IGNORE_DUPS
+setopt SHARE_HISTORY
+setopt HIST_REDUCE_BLANKS
+
+fastfetch
