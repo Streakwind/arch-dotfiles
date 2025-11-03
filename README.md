@@ -41,3 +41,13 @@ to-do
 - wlogout lock button
 - import my old waybar
 - matugen
+- possibly put brightness/volume control somewhere else
+- quickshell overview thing
+- screenshot editing
+- make swaync save notifs?
+- time on wallapper somehow 
+- change screen size w/ mouse
+- better keybinds for magnify
+- remove unnecessary 
+- hyprpicker
+- thinkpad red dot lol
