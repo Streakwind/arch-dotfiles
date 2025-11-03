@@ -13,5 +13,5 @@ export ELECTRON_OZONE_PLATFORM_HINT=auto
 
 fastfetch
 
-source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.config/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.config/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
