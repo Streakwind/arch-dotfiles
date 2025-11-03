@@ -1,6 +1,11 @@
 # arch-dotfiles
 my dotfiles for hyprland 
 
+dependencies
+```
+hyprland zsh fastfetch oh-my-posh-bin
+```
+
 install w/ gnu stow
 ```
 sudo pacman -S stow
