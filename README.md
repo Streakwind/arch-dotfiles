@@ -3,7 +3,7 @@ my dotfiles for hyprland
 
 dependencies
 ```
-hyprland zsh fastfetch oh-my-posh-bin git base-devel kitty catppuccin-gtk-theme-mocha nwg-look waybar
+hyprland zsh fastfetch oh-my-posh-bin git base-devel kitty catppuccin-gtk-theme-mocha nwg-look waybar swaync hypridle hyprlock
 ```
 
 waybar is stolen from @binnewbs while I try to sort things out
