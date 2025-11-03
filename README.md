@@ -6,6 +6,11 @@ dependencies
 hyprland zsh fastfetch oh-my-posh-bin git base-devel kitty catppuccin-gtk-theme-mocha nwg-look
 ```
 
+fonts
+```
+ttf-jetbrains-mono-nerd
+```
+
 install w/ gnu stow
 ```
 sudo pacman -S stow

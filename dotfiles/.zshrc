@@ -1,3 +1,5 @@
+# https://ohmyposh.dev/docs/themes
+
 eval "$(oh-my-posh init zsh)"
 eval "$(oh-my-posh init zsh --config ~/.poshthemes/catppuccin_frappe.omp.json)"
 
