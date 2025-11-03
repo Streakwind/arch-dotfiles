@@ -3,7 +3,7 @@ my dotfiles for hyprland
 
 dependencies
 ```
-hyprland zsh fastfetch oh-my-posh-bin
+hyprland zsh fastfetch oh-my-posh-bin git base-devel kitty catppuccin-gtk-theme-mocha nwg-look
 ```
 
 install w/ gnu stow
