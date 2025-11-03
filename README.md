@@ -4,7 +4,7 @@ my dotfiles for hyprland
 dependencies
 ```
 hyprland zsh fastfetch oh-my-posh-bin git base-devel kitty catppuccin-gtk-theme-mocha nwg-look waybar swaync hypridle hyprlock
-brightnessctl hyprpaper blueman pavucontrol rofi hyprshot network-manager-applet nm-connection-editor networkmanager nautilus hyprpolkitagent hyprpicker playerctl
+brightnessctl hyprpaper blueman pavucontrol rofi hyprshot network-manager-applet nm-connection-editor networkmanager nautilus hyprpolkitagent hyprpicker playerctl xdg-open
 ```
 
 most of the stuff is stolen from either @binnewbs or @JaKooLit
