@@ -47,11 +47,11 @@ defaultTheme="freedesktop"
 
 # Prefer the user's theme, but use the system's if it doesn't exist.
 sDIR="$systemDIR/$defaultTheme"
-if [ -d "$userDIR/$theme" ]; then
-    sDIR="$userDIR/$theme"
-elif [ -d "$systemDIR/$theme" ]; then
-    sDIR="$systemDIR/$theme"
-fi
+# if [ -d "$userDIR/$theme" ]; then
+#     sDIR="$userDIR/$theme"
+# elif [ -d "$systemDIR/$theme" ]; then
+#     sDIR="$systemDIR/$theme"
+# fi
 
 # Get the theme that it inherits.
 iTheme=$(cat "$sDIR/index.theme" | grep -i "inherits" | cut -d "=" -f 2)
