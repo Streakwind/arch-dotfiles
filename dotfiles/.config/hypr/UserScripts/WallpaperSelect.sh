@@ -3,10 +3,11 @@
 # === CONFIG ===
 WALLPAPER_DIR="$HOME/Pictures/wallpapers"
 SYMLINK_PATH="$HOME/.config/hypr/current_wallpaper"
+COLOR_FILE="$HOME/.config/colors/colors.css"
 
 cd "$WALLPAPER_DIR" || exit 1
 
-# === handle spaces in filenames
+# === Handle spaces in filenames ===
 IFS=$'\n'
 
 # === ICON-PREVIEW SELECTION WITH ROFI, SORTED BY NEWEST ===
@@ -17,7 +18,8 @@ done | rofi -dmenu -p "")
 SELECTED_PATH="$WALLPAPER_DIR/$SELECTED_WALL"
 
 # === GENERATE COLORS WITH MATUGEN ===
-matugen image "$SELECTED_PATH"  # this updates colors.css
+mkdir -p "$(dirname "$COLOR_FILE")"
+matugen image "$SELECTED_PATH" --file "$COLOR_FILE"
 
 # === SET WALLPAPER WITH SWWW ===
 swww img "$SELECTED_PATH" --transition-fps 60 --transition-type fade --transition-duration 0.5
