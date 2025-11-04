@@ -38,9 +38,7 @@ btop brave-bin visual-studio-code-bin nano yay
 
 
 to-do
-- wlogout lock button
 - import my old waybar
-- matugen
 - possibly put brightness/volume control somewhere else
 - quickshell overview thing
 - screenshot editing
