@@ -184,17 +184,31 @@ progressbar {
   /* Buttons menu */
 .widget-buttons-grid {
   font-size: x-large;
-  padding: 4px 1px;
-  margin: 4px;
+  padding: 6px 0px;  /* Changed from 2px to 0px on sides */
+  margin: 6px 0px;   /* Changed to 0px on sides */
   border-radius: 12px;
   background: alpha(@primary_container, 0.5);
 }
 
+.widget-buttons-grid>flowbox {
+  /* Ensure the flowbox uses all available space */
+  margin: 0;
+  padding: 0;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild {
+  /* Make each button container equal width */
+  min-width: 0;
+  flex: 1;
+}
+
 .widget-buttons-grid>flowbox>flowboxchild>button {
-  margin: 2px 6px;
-  padding: 4px 8px;
+  margin: 4px 2px;   /* Reduced horizontal margin from 10px to 2px */
+  padding: 6px 0px;  /* Remove horizontal padding */
   background: transparent;
   border-radius: 8px;
+  min-width: 0;
+  width: 100%;       /* Make buttons fill their container */
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button:hover {
