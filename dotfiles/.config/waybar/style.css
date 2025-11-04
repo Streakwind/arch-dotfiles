@@ -32,8 +32,8 @@ tooltip label{
 }
 /*-----module groups----*/
 .modules-right {
-	background-color: @primary;
-	color: @secondary;
+	background-color: #000000;
+	color: #ffffff;
 	border-bottom: 0px;
 	border-style: solid;
 	border-color: white;
@@ -44,8 +44,8 @@ tooltip label{
 	padding-left: 4px;
 }
 .modules-center {
-	background-color: @primary;
-	color: @secondary;
+	background-color: @surface;
+	color: @on-surface;
 	border-bottom: 0px;
 	border-style: solid;
 	border-color: white;
