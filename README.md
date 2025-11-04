@@ -3,8 +3,8 @@ my dotfiles for hyprland
 
 dependencies
 ```
-hyprland zsh fastfetch oh-my-posh-bin git base-devel kitty catppuccin-gtk-theme-mocha nwg-look waybar swaync hypridle hyprlock matugen-bin
-brightnessctl hyprpaper blueman pavucontrol rofi hyprshot network-manager-applet nm-connection-editor networkmanager nautilus hyprpolkitagent hyprpicker playerctl xdg-open
+hyprland zsh fastfetch oh-my-posh-bin git base-devel kitty catppuccin-gtk-theme-mocha nwg-look waybar swaync hypridle hyprlock matugen-bin swayosd-git
+brightnessctl hyprpaper blueman pavucontrol rofi hyprshot network-manager-applet nm-connection-editor networkmanager nautilus hyprpolkitagent hyprpicker playerctl xdg-open eww 
 ```
 
 most of the stuff is stolen from either @binnewbs or @JaKooLit
@@ -42,10 +42,7 @@ to-do
 - possibly put brightness/volume control somewhere else
 - quickshell overview thing
 - screenshot editing
-- make swaync save notifs?
-- time on wallapper somehow 
 - change screen size w/ mouse
 - better keybinds for magnify
-- remove unnecessary 
-- hyprpicker
+- remove unnecessary scripts
 - thinkpad red dot lol
