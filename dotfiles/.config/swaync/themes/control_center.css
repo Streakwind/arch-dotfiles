@@ -201,9 +201,9 @@ progressbar {
 
 .widget-buttons-grid > flowbox > flowboxchild > button {
   margin: 4px 1px;
-  padding: 6px 0px;
+  padding: 3px 0px;
   background: transparent;
-  border-radius: 8px;
+  border-radius: 4px;
   min-width: 50px;
   min-height: 40px;
 }
