@@ -4,7 +4,7 @@
 @define-color hover           alpha(@selected, 1);
 @define-color urgent          @error;
 
-* {
+*:not(progress):not(progressbar):not(trough){
   color:            @text;
 
   all: unset;
@@ -22,14 +22,12 @@
 /* CONTROL CENTER ------------------------------------------------------------------------ */
 
 .control-center {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 24px;
   border: 1px solid @selected;
   box-shadow: 0 0 10px 0 rgba(0,0,0,.6);
   margin: 18px;
   padding: 12px;
-  max-height: 80vh;
-  overflow: auto;
 }
 
 /* Notifications  */
@@ -40,6 +38,7 @@
   border-radius: 16px;
   margin: 4px 0px;
   padding: 4px;
+  box-shadow: none;
 }
 
 .control-center .notification-row .notification-background .notification.critical {
@@ -77,7 +76,7 @@
   border-radius: 6px;
   color: @text;
   margin: 0px;
-  padding: 6px;
+  padding: 4px;
 }
 
 .control-center .notification-row .notification-background .close-button:hover {
@@ -138,7 +137,7 @@ progressbar {
 }
 
 .widget-title button {
-  background: alpha(@hover, .50);
+  background: alpha(@primary_container, 0.5);
   border-radius: 6px;
   padding: 4px 16px;
 }
@@ -153,12 +152,12 @@ progressbar {
 
   /* Do not disturb */
 .widget-dnd {
-  margin: 6px;
+  margin: 6px 9px 6px 6px;
   font-size: 1.2rem;
 }
 
 .widget-dnd > switch {
-  background: alpha(@hover, .50);
+  background: alpha(@primary_container, 0.75);
   font-size: initial;
   border-radius: 8px;
   box-shadow: none;
@@ -170,7 +169,7 @@ progressbar {
 }
 
 .widget-dnd > switch:checked {
-  background: @selected;
+  background: @on_primary;
 }
 
 .widget-dnd > switch:checked:hover {
@@ -188,7 +187,7 @@ progressbar {
   padding: 6px 2px;
   margin: 6px;
   border-radius: 12px;
-  background: alpha(@hover, .50);
+  background: alpha(@primary_container, 0.5);
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button {
@@ -205,17 +204,27 @@ progressbar {
 
   /* Music player */
 .widget-mpris {
-    background: alpha(@hover, .50);
+    background: alpha(@primary_container, .5);
     border-radius: 16px;
     color: @text;
     margin:  20px 6px;
+    padding: 6px 6px 6px 6px;
+}
+
+.widget-mpris .widget-mpris-player .mpris-background {
+  filter: blur(10px);
+}
+
+.widget-mpris .widget-mpris-player .mpris-overlay {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
   /* NOTE: Background need *opacity 1* otherwise will turn into the album art blurred  */
 .widget-mpris-player {
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 14px;
-    padding: 6px 14px;
+    padding: 0px 0px;
     margin: 6px;
 }
 
@@ -234,7 +243,7 @@ progressbar {
 
 .widget-mpris-album-art {
   border-radius: 12px;
-  margin: 6px 0 0 2px;
+  margin: 6px
 }
  
 .widget-mpris-title {
@@ -247,12 +256,54 @@ progressbar {
     font-size: 0.8rem;
 }
 
-/* Volume */
-.widget-volume {
-  background: @background-sec;
-  color: @background;
-  padding: 4px;
-  margin: 6px;
-  border-radius: 6px;
+/* Volume widget */
+:root {
+  --widget-volume-row-icon-size: 24px;
 }
 
+.widget-volume {
+  padding: 8px;
+  margin: 8px;
+  border-radius: 12px;
+}
+
+/* Each row app icon */
+.widget-volume row image {
+  -gtk-icon-size: var(--widget-volume-row-icon-size);
+}
+
+.per-app-volume {
+  background-color: var(--noti-bg-alt);
+  padding: 4px 8px 8px 8px;
+  margin: 0px 8px 8px 8px;
+  border-radius: 12px;
+}
+
+/* Slider widget */
+.widget-slider {
+  padding: 8px;
+  margin: 8px;
+  border-radius: 12px;
+}
+
+.widget-slider label {
+  font-size: inherit;
+}
+
+/* Backlight widget */
+.widget-backlight {
+  padding: 8px;
+  margin: 8px;
+  border-radius: 12px;
+}
+
+/* Inhibitors widget */
+.widget-inhibitors > label {
+  margin: 8px;
+  font-size: 1.5rem;
+}
+
+.widget-inhibitors > button {
+  margin: 8px;
+  border-radius: 12px;
+}
