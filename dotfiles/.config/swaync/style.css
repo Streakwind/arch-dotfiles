@@ -26,7 +26,7 @@
     top: 10px;
     right: 10px;
     width: 380px;
-    max-height: 600px;
+    max-height: 90vh;
     overflow-y: auto;
     background-color: alpha(@surface, 0.8);
     border-radius: 24px;
@@ -40,7 +40,7 @@
 
 /* ---- Notifications ---- */
 .control-center .notification-row {
-    max-height: 300px;
+    max-height: 50vh;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
@@ -139,7 +139,7 @@ tooltip {
 /* Buttons Grid */
 .widget-buttons-grid {
     font-size: 1rem;
-    padding: 20px 20px 10px;
+    padding: 10px 10px 5px;
     margin: unset;
 }
 .widget-buttons-grid > flowbox > flowboxchild > button {
@@ -168,8 +168,8 @@ tooltip {
 @define-color mpris-button-hover rgba(0,0,0,0.5);
 
 .widget-mpris .widget-mpris-player {
-    padding: 16px;
-    margin: 16px 20px;
+    padding: 8px;
+    margin: 8px 10px;
     background-color: @mpris-album-art-overlay;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.65);
