@@ -184,37 +184,33 @@ progressbar {
   /* Buttons menu */
 .widget-buttons-grid {
   font-size: x-large;
-  padding: 6px 0px;  /* Changed from 2px to 0px on sides */
-  margin: 6px 0px;   /* Changed to 0px on sides */
+  padding: 6px;
+  margin: 6px;
   border-radius: 12px;
   background: alpha(@primary_container, 0.5);
 }
 
-.widget-buttons-grid>flowbox {
-  /* Ensure the flowbox uses all available space */
-  margin: 0;
-  padding: 0;
+.widget-buttons-grid > flowbox {
+  margin: 0px;
+  padding: 0px;
 }
 
-.widget-buttons-grid>flowbox>flowboxchild {
-  /* Make each button container equal width */
-  min-width: 0;
-  flex: 1;
+.widget-buttons-grid > flowbox > flowboxchild {
+  margin: 0px 1px;
 }
 
-.widget-buttons-grid>flowbox>flowboxchild>button {
-  margin: 4px 2px;   /* Reduced horizontal margin from 10px to 2px */
-  padding: 6px 0px;  /* Remove horizontal padding */
+.widget-buttons-grid > flowbox > flowboxchild > button {
+  margin: 4px 1px;
+  padding: 6px 0px;
   background: transparent;
   border-radius: 8px;
-  min-width: 0;
-  width: 100%;       /* Make buttons fill their container */
+  min-width: 50px;
+  min-height: 40px;
 }
 
-.widget-buttons-grid>flowbox>flowboxchild>button:hover {
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
   background: @hover;
 }
-
 
   /* Music player */
 .widget-mpris {
