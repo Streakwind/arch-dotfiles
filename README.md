@@ -39,10 +39,15 @@ btop brave-bin visual-studio-code-bin nano yay
 
 to-do
 - import my old waybar
-- possibly put brightness/volume control somewhere else
+- possibly put brightness/volume control somewhere else (swayosd)
 - quickshell overview thing
 - screenshot editing
 - change screen size w/ mouse
 - better keybinds for magnify
 - remove unnecessary scripts
 - thinkpad red dot lol
+- clipboard history
+- emoji selector
+- ch keyboard
+- plymouth
+- open vpn
