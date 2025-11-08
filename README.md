@@ -13,8 +13,13 @@ wallpapers from @mylinuxforwork and @uiriansan
 fonts
 ```
 ttf-jetbrains-mono-nerd
+sdl2_ttf
+ttf-input-nerd
+ttf-jetbrains-mono
+ttf-ms-fonts
 ```
 
+grub theme: https://github.com/vinceliuice/Graphite-gtk-theme/tree/main/other/grub2
 install w/ gnu stow
 ```
 sudo pacman -S stow
